@@ -1,6 +1,8 @@
-argocd app create helloworld \
- --repo https://github.com/akashkaturi/argo-cd-helm-deployments.git \
- --path charts/helloworld \
+```bash
+argocd app create nginx \
+ --repo https://github.com/akashkaturi/ArgocdCloud.git \
+ --path charts/app_chart \
  --sync-policy auto \
  --dest-namespace argocd \
  --dest-server https://kubernetes.default.svc
+```
