@@ -76,11 +76,11 @@ resources: {}
 livenessProbe:
   initialDelaySeconds: 30
   httpGet:
-    path: /
+    path: /weather
     port: 5000
 readinessProbe:
   httpGet:
-    path: /
+    path: /weather
     port: 5000
 
 autoscaling:
