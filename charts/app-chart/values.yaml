@@ -74,6 +74,7 @@ resources: {}
   #   memory: 128Mi
 
 livenessProbe:
+  initialDelaySeconds: 5
   httpGet:
     path: /
     port: http
