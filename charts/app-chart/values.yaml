@@ -77,11 +77,11 @@ livenessProbe:
   initialDelaySeconds: 30
   httpGet:
     path: /
-    port: http
+    port: 5001
 readinessProbe:
   httpGet:
     path: /
-    port: http
+    port: 5001
 
 autoscaling:
   enabled: false
