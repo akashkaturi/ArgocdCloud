@@ -2,11 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: myapp-ingress
+  namespace: argocd
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: myapp.example.com
+  - host: weather-app.com
     http:
       paths:
       - path: /
