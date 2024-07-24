@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: myapp-service
+            name: {{ include "app_chart.fullname" . }}
             port:
               number: 80
